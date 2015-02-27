@@ -11,6 +11,13 @@
 </p>
 
 <p>
+  <strong>All Tweets:</strong> <br>
+  <% @user.tweets.each do |singletweet| %>
+  <%= singletweet.status %> <br>
+  <% end %>
+</p>
+
+<p>
   <strong>City:</strong>
   <%= @user.city %>
 </p>
